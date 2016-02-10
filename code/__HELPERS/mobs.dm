@@ -111,7 +111,7 @@ proc/RoundHealth(health)
 		if(10 to 20)
 			return "health10"
 		if(0 to 10)
-			return "health1"
+			return "health0"
 		if(-10 to 0) 		//Hard crit begins here. The health bar will turn a brilliant red and deducted health will be black.
 			return "health-0"
 		if(-20 to -10)
@@ -130,10 +130,8 @@ proc/RoundHealth(health)
 			return "health-70"
 		if(-90 to -80)
 			return "health-80"
-		if(-95 to -90)
+		if(-100 to -90)		//HURRY UP, DOC!
 			return "health-90"
-		if(-100 to -95)		//HURRY UP, DOC!
-			return "health-95"
 		else
 			return "health-100"
 	return "0"

@@ -625,15 +625,15 @@ It can still be worn/put on as normal.
 			if (target.shoes && target.shoes.canremove)
 				strip_item = target.shoes
 		if("l_hand")
+			slot_to_process = slot_r_hand
 			if (istype(target, /obj/item/clothing/suit/straight_jacket))
 				del(src)
-			slot_to_process = slot_l_hand
 			if (target.l_hand)
 				strip_item = target.l_hand
 		if("r_hand")
+			slot_to_process = slot_r_hand
 			if (istype(target, /obj/item/clothing/suit/straight_jacket))
 				del(src)
-			slot_to_process = slot_r_hand
 			if (target.r_hand)
 				strip_item = target.r_hand
 		if("uniform")
